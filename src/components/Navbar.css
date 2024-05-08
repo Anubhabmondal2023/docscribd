@@ -34,13 +34,13 @@ header{
 nav .nav_links{
     list-style-type: none;
     display: flex;
-    text-decoration: none;
 }
 
-nav .nav_links a{
+nav .nav_links Link{
     padding: 1rem;
     color: black;
     font-size: 1.45rem;
+    text-decoration: none;
 }
 
 .nav_links .active{
