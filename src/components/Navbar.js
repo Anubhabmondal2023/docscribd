@@ -17,9 +17,9 @@ export default function Navbar() {
           <Link to="/"><img src={brandLogo} draggable="false" className="brand_logo" alt="logo" /></Link>
           {/* <h1>DocScribd</h1> */}
         </div>
-        <div className='wrap' ref={navRef} onClick={showNavbar}>
+        <div className='wrap' ref={navRef}>
           <nav>
-            <ul className="nav_links">
+            <ul className="nav_links" onClick={showNavbar}>
               <li><Link to="/" className="active">Home</Link></li>
               <li><Link to="/">About</Link></li>
               <li><Link to="/">Contact Us</Link></li>
