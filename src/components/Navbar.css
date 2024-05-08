@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poetsen+One&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+:root{
+    --yellow: rgb(255, 234, 6);
+    --active: rgba(59, 58, 58, 0.679);
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 16vh;
+}
+
+.wrap{
+    display: flex;
+    align-items: center;
+    gap: 15rem;
+}
+
+.brand_logo{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .nav_links{
+    list-style-type: none;
+    display: flex;
+}
+
+nav .nav_links a{
+    padding: 1rem;
+    color: black;
+    font-size: 1.45rem;
+}
+
+.nav_links .active{
+    color: var(--active);
+}
+
+.login_btn, .signup_btn{
+    padding: 0.9rem;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0.2rem;
+}
+
+.login_btn{
+    background-color: transparent;
+    border-radius: 0.5rem;
+    border: 3px solid var(--yellow);
+    color: var(--yellow);
+}
+
+.login_btn:hover{
+    background-color: var(--yellow);
+    color: white;
+}
+
+.signup_btn{
+    background-color: var(--yellow);
+    border-radius: 0.5rem;
+    border: 3px solid var(--yellow);
+    color: white;
+}
+
+header .nav-btn {
+	padding: 5px;
+
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	/* visibility: hidden; */
+	/* opacity: 0; */
+	font-size: 2.5rem;
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+	header .nav-btn {
+		display: inline;;
+		opacity: 1;
+	}
+
+	header .wrap {
+		position: fixed;
+		top: -100vh;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		transition: 1s;
+	}
+
+    header .nav_links{
+        position: relative;
+        top: 8rem;
+        left: 1rem;
+        flex-direction: column;
+        text-align: left;
+        justify-content: left;
+        gap: 1rem;
+    }
+
+	header .responsive_nav {
+		transform: translateY(100vh);
+        background-color: rgb(197, 194, 194);
+        display: flex;
+        justify-content: flex-start;
+        gap: 15rem;
+        align-items: flex-start;
+        /* opacity: 0.5; */
+	}
+
+    header .btn{
+        margin: 1rem;
+    }
+
+	.wrap .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+
+}

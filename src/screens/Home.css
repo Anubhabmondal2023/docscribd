@@ -1,0 +1,58 @@
+main{
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+
+main .image .doctor_img{
+    background-color: var(--yellow);
+    border-radius: 5rem;
+    padding: 0rem 2rem;
+}
+
+main .text{
+    padding: 1rem;
+}
+
+main .text .bold_poetsen{
+    font-family: "Poetsen One", 'sans-serif';
+    font-size: 4rem;
+    white-space: nowrap;
+    margin-bottom: 1.5rem;
+}
+
+main .text .tagline{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+main .text .tagline em,main .text .tagline b{
+    font-weight: bold;
+    color: var(--yellow);
+
+}
+
+@media only screen and (max-width: 1024px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: fit-content;
+        margin: 3rem 3rem;
+    }
+}
+
+@media only screen and (max-width: 613px){
+    main .image .doctor_img{
+        width: 95.5vw;
+        /* border-radius: 20%; */
+    }
+}
+
+@media only screen and (max-width: 364px){
+    main .text .bold_poetsen{
+        font-size: 15vw;
+    }
+
+}
