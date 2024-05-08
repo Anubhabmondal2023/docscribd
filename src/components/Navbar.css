@@ -36,7 +36,7 @@ nav .nav_links{
     display: flex;
 }
 
-nav .nav_links Link{
+nav .nav_links a{
     padding: 1rem;
     color: black;
     font-size: 1.45rem;
